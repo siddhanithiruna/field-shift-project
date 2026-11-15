@@ -20,3 +20,5 @@ which are matched against rotation traits and weighted by farmer priorities.
 
 ## Limitations
 Rotation traits are agronomic estimates tuned to Iowa; NDVI is loaded for the demo field only.
+
+## Team Member
