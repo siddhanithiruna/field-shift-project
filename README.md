@@ -1,4 +1,5 @@
 # Field Shift
+### 🚀 [Click here to view the Live App] (https://field-shift-project-xrdzg2lvna6kdoawkcjx4h.streamlit.app/)
 
 Crop-rotation decision-support tool built on NASA Earth observation data
 (2026 NASA Space Apps Challenge: "Field Shift: Adapting Farms with NASA Data").
