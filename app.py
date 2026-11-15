@@ -174,7 +174,7 @@ place_name = describe_place(lat, lon) if place_name.startswith("Custom") else pl
 info_l, info_r = st.columns(2, gap="large")
 with info_l:
     st.markdown("**Selected field**")
-    st.markdown(f"### {place_name}")
+    st.markdown(f"### 📍 {place_name}")
     st.caption(f"Lat {lat}, Lon {lon}  |  Data: NASA POWER" + (" + MODIS NDVI" if ndvi is not None else ""))
 with info_r:
     st.markdown(
