@@ -1,4 +1,4 @@
-# app.py - Field Shift: click-to-pick location, NASA POWER (live) + MODIS NDVI (demo field)
+# app.py -- Field Shift: click-to-pick location, NASA POWER (live) + MODIS NDVI (demo field)
 import os
 import folium
 import pandas as pd
@@ -98,7 +98,7 @@ def describe_place(lat, lon):
         return "Near " + ", ".join(p for p in parts if p)
     except Exception:
         return "Custom location"
-    
+
 @st.cache_data
 def get_ndvi():
     return load_ndvi("data/ndvi_iowa.csv")
@@ -108,7 +108,7 @@ def tidy(fig, title, height=280):
                       margin=dict(l=10, r=10, t=40, b=10), showlegend=False)
     return fig
 
-# ---------- Sidebar ---------- 
+# ---------- Sidebar ----------
 st.sidebar.markdown("**Location**")
 st.sidebar.selectbox("Location", list(PLACES), key="place", on_change=on_place_change,
                      label_visibility="collapsed")

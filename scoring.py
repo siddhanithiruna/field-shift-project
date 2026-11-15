@@ -1,11 +1,11 @@
-# scoring.py - indicators + rotation scoring (POWER + optional NDVI)
+# scoring.py -- indicators + rotation scoring (POWER + optional NDVI)
 import pandas as pd
 from rotations import ROTATIONS
 
-GROWING_MONTHS = (5, 9)      
-SUMMER_MONTHS = (6, 8)       
-DRY_SOIL_THRESHOLD = 0.40    
-HOT_DAY_C = 35               
+GROWING_MONTHS = (5, 9)      # May-Sep
+SUMMER_MONTHS = (6, 8)       # Jun-Aug (peak crop greenness)
+DRY_SOIL_THRESHOLD = 0.40    # root-zone wetness below this = dry day
+HOT_DAY_C = 35               # max temp at/above this = heat-stress day
 
 # ---------------- Data loading ----------------
 def load_power(path="data/power_iowa.csv"):
